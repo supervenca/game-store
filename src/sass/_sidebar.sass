@@ -2,3 +2,21 @@
     background-color: $color-green-dark
     grid-column: sidebar-start / sidebar-end
     grid-row: 1 / -1
+    padding-top: 3.7rem
+    display: flex
+    justify-content: center
+.hamburger
+    border: 0
+    width: 4.5rem
+    height: .3rem
+    background-color: $color-gray-light
+    &::before, &::after
+        background-color: $color-gray-light
+        width: 4.5rem
+        height: .3rem
+        content: ""
+        display: block
+    &::before
+        transform: translateY(1.5rem)
+    &::after
+        transform: translateY(-1.8rem)
