@@ -5,6 +5,8 @@
     grid-column: full-start / col-end 6
     display: grid
     grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr
+    @include respond(tablet)
+        grid-column: full-start / full-end
     &__line-text
         font-size: 1.6rem
         font-weight: 700

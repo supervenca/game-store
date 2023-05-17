@@ -5,6 +5,13 @@
     padding-top: 3.7rem
     display: flex
     justify-content: center
+    @include respond(small-desktop)
+        grid-row: 1 / 2
+        grid-column: 1 / -1
+        justify-content: end
+        align-items: center
+        padding-top: 0
+        padding-right: 3.7rem
 .hamburger
     border: 0
     width: 4.5rem
