@@ -26,6 +26,8 @@
         grid-template-columns: repeat(4, 1fr)
         grid-gap: 2rem
         justify-items: center
+        @include respond(phone)
+            grid-template-columns: repeat(2, 1fr)
     &__img img
         height: 2.5rem
         filter: brightness(70%)
